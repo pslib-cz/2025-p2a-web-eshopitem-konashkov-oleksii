@@ -11,6 +11,7 @@
     }
 
     .card__list {
+        margin-top: 5rem;
         padding: 1rem;
         font-family: var(--font);
         font-weight: var(--fontWeightNormal);
