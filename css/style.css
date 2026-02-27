@@ -1,0 +1,178 @@
+@import "./init.css" layer(init);
+@import "./reset.css" layer(reset);
+@layer reset, init, design;
+
+@layer design{
+
+    /* Items Grid */
+    .card__list{
+        padding: 1rem;
+        font-family: var(--font);
+        font-weight: var(--fontWeightNormal);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 2rem;
+        /* grid-template-rows: 4fr 1fr 3fr 2fr 1fr; */
+    }
+    .card__item{
+        display: grid;
+        gap: 2rem;
+        grid-row-end: span 5;
+        grid-template-rows: subgrid;
+        position: relative;
+    }
+    /* Badge */
+    .card__badge{
+        display: inline-block;
+        padding: 0.5em 1em;
+        font-size: 0.75rem;
+        background-color: var(--colorMagenta);
+        color: white;
+        border-radius: 0 0.25em 0.25em 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    /* Header */
+    .card__header{
+        padding: 1rem;
+        position: relative;
+    }
+    /* Card color variants */
+    .card__color-variants-list{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        gap: 1rem;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .card__color-variant{
+        border: solid var(--colorGray) 1px;
+        display: block;
+        aspect-ratio: 1 / 1;
+        width: 1.5rem;
+        border-radius: 0.25rem;
+        transition-duration:0.25s ;
+    }
+    .card__color-variant:hover{
+        transform: scale(125%);
+    }
+    .card__color-variant--pink{
+        background-color: #f7c0ce;
+    }
+    .card__color-variant--black{
+        background-color: black;
+    }
+
+    /* Body */
+        /* Title */
+    .card__name{
+        font-weight: var(--fontWeightBold);
+    }
+        /* Params */
+    .card__params-list{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .card__param{
+        display: flex;
+        justify-content: space-between;
+        gap: 0.25rem;
+        align-items: center;
+    }
+    .param__state{
+        font-weight: var(--fontWeightSemiBold);
+        text-align: right;
+        vertical-align: middle;
+    }
+    
+        /* Pricing */
+    .text--semi-bold{
+        font-weight: var(--fontWeightSemiBold);
+    }
+    .card__pricing{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    /* Left-col */
+    .card__amount{
+        color: var(--colorGreen);
+    }
+    .card__prices,
+    .card__delivery{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0.25em;
+    }
+    /* Right-Col */
+    .card__prices{
+        text-align: right;
+        flex-grow: 1;
+    }
+    .card__discounts{
+        font-weight: var(--fontWeightLight);
+    }
+    .card__discount-amount{
+        color: var(--colorMagenta);
+    }
+    .card__old-price{
+        text-decoration: line-through;
+        color: var(--colorDarkGray);
+    }
+    .card__price-main{
+        font-size: 1.5rem;
+        font-weight: var(--fontWeightSemiBold);
+        color: var(--colorMagenta);
+    }
+    .card__price-no-dph{
+        color: var(--colorDarkGray);
+    }
+    /* Footer */
+    .card__footer{
+        background-color: var(--colorGray);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    svg{
+        flex-shrink: 0;
+        aspect-ratio: 1 / 1;
+        width: 1.5rem;
+        height: 1.5rem;
+        vertical-align: bottom;
+    }
+    .card__btn{
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+    }
+    .card__btn:hover{
+        cursor: pointer;
+    }
+    .card__addToList-wrapper{
+        display: flex;
+        gap: 1rem;
+    }
+    #addToBasket{
+        background-color: var(--colorGreen);
+        color: var(--colorWhite, #fff);
+        line-height: 1.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.45rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+        box-shadow: 4px 4px 20px -7px rgba(0,0,0,0.82);
+    }
+
+    #addToBasket:hover{
+        background-color: var(--colorDarkGreen,);
+    }
+}
