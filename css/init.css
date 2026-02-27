@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+:root {
+    --font: "Google Sans Flex", Arial, sans-serif;
+    --fontWeightLight: 300;
+    --fontWeightNormal: 400;
+    --fontWeightSemiBold:500;
+    --fontWeightBold: 800;
+
+
+    --colorYellow: #fc0;
+    --colorMagenta: #c02485;
+    --colorGreen: #31bf24;
+    --colorBgGreen: #31bf2412;
+    --colorDarkGreen: #228419;
+    --colorBlue: #009bc9;
+    --colorGray: #eee;
+    --colorDarkGray: #aeadad;
+    --colorWhite: #fff;
+    --colorBlack:black;
+
+    font-family: var(--font);
+}
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
