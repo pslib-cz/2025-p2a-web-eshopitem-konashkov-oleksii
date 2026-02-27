@@ -11,11 +11,13 @@
     --colorYellow: #fc0;
     --colorMagenta: #c02485;
     --colorGreen: #31bf24;
+    --colorBgGreen: #31bf2412;
     --colorDarkGreen: #228419;
     --colorBlue: #009bc9;
     --colorGray: #eee;
     --colorDarkGray: #aeadad;
     --colorWhite: #fff;
+    --colorBlack:black;
 
     font-family: var(--font);
 }
