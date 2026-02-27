@@ -165,9 +165,9 @@
         border: solid 1px var(--colorGreen);
         color: var(--colorGreen);
         background-color: var(--colorBgGreen);
-        padding: 1em 0;
+        padding: 1em 0.5em;
         border-radius: 0.5em;
-        text-align: center;
+        text-align: left;
         display: flex;
         align-items: center;
         justify-content: center;
